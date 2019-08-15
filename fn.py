@@ -40,12 +40,10 @@ def get_time_in_seconds(start,end):
 
 
 def get_the_grade (student_Id , exercise ):
-    value = 0.001
-    if exercise in final_grades.columns:
-        arr = final_grades.loc[(final_grades['student_Id'] == student_Id)][str(exercise).strip()].values
-        if len(arr) !=0 : 
-            value = float (arr[0])
-    return value 
+    session = 'Session_'+exercise[3:4]
+    arr = final_grades.loc[(final_grades['student_Id'] == student_Id)][session].values
+        
+    return float(arr[0]) 
 
 
 def get_the_Intermediate_grade (student_Id , exercise ):
