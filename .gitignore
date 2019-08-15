@@ -1,4 +1,4 @@
 dummyData.ipynb
-.ipynb_checkpoints
-.vscode
-.idea
+/.ipynb_checkpoints/
+/.vscode/
+/.idea/
