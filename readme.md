@@ -13,7 +13,7 @@ This data was collected by UCI [Data and Full Description ](https://archive.ics.
 * Remove all the records of the students that did not take the final exam 
 * Dropping the `idle_time` column as there is a lot of data corrupted 
 
-## 2) Processign the data : 
+## 2) Processing the data : 
 * Renamed the values of the `activity` column i.e. `Deeds_Es_1_1` to `Deeds` to ease reading and manipulating the data 
 * Converting the `start_time` and `end_time` into `working_time` column and dropping the former two columns 
 * Renaming the `exercise` column values to remove any indication to which exercise it is i.e. `Es_1_1` to `Es_1`
